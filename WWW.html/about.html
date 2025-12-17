@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=0" />
+    <title>About Us | Keth's Beauty Products</title>
+<link rel="stylesheet" href="main.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?
+family=poppins:wght@100;200;300;400;600;700&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+<!-----------About Us-------------->
+
+<section class="About">
+
+  <nav>
+    <nav class="navbar background">
+        <ul class="nav-list"></ul>
+
+            <div class="logo"> 
+                <h1>
+                    <span class="ke">Ke</span><span class="proD">ProD</span><span class="fist">&#x1F44A;</span>
+                </h1>
+                <div class="nav-links" id="navelinks">
+                    <i clss="fa fa-times" onclick="hideMenu"></i>
+                    
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Prouducts</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+      
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+             </nav>
+
+    <video autoplay loop muted plays-inline class="back-video" id="Playvideo">
+        <source src="vedios/video.mp4" type="video/mp4">
+
+        <div class="content">
+            <h1>Beauty Products</h1>
+            <p>Be the best varsion of yourself</p>
+            <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+    </video>
+
+ <h1>Who We Are</h1>
+ <p>Keth's Beauty Products is a family-owned business founded in 2021. We are dedicated to providing high-quality beauty products that make our customers look and feel their best. Our products are made from natural ingredients and are cruelty-free.</p>
+ <br>
+ <br>
+     <p>Our team consists of experienced professionals who are passionate about beauty and skincare. We believe that everyone deserves to feel confident and beautiful, and we strive to help our customers achieve that.</p>
+     <br>
+     <br>
+     <p>Thank you for choosing Keth's Beauty Products. We hope you love our products as much as we do.</p>
+
+    
+ </section>
+
+  <!------------Footer----------->
+
+  <section class="footer">
+
+    <h4> About Us</h4>
+    <p>Keth's Beauty Products is a family-owned business founded in 2021.</p>
+
+
+    <div class="icons">
+        
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+        
+      </div>
+      
+      <p>Made with <i class="fa fa-heart-o"></i> By Keth's Beauty</p>
+
+ </section>
+
+ <script>
+    
+    var video = document.getElementById("Playvideo");
+    
+    
+    var btn = document.getElementById("myBtn");
+    
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+    
+</body>
+
+</html>

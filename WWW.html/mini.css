@@ -1,0 +1,243 @@
+@import url('https //fonts.googleapis.com/css2 family=poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+/*-------------Contact US Page----------------*/
+        
+        
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+}
+
+body{
+    background-image: linear-gradient(rgba(83, 10, 70, 0.5), rgba(255, 255, 0, 0.5)),    url(images/20.jpg);
+    
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+
+.logo {
+    display:flex;
+    position: fixed;
+    color: #b70f76;
+    top:0;
+    left:0;
+    justify-content: left;
+    align-items: center;
+    margin-right: auto;
+    
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+
+nav ul {
+	list-style: none;
+	margin: 40px;
+	padding: 0;
+	display:flex;
+    
+}
+nav ul li {
+	margin-right: 90px;
+}
+
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nav-links ul li{
+
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    }
+
+    .nav-links ul li a{
+
+        color: #fff;
+        text-decoration: none;
+        font: 13px; ;
+        
+    }
+
+    .nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition:0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+
+    nav .fa{
+        display:none;
+    }
+
+header{
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    left:12%;
+    top:2rem;
+}
+header h1{
+    font-size: 30px;
+
+}
+
+
+.content-form{
+    margin-top: 7rem;
+}
+
+section i {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255, 255, 0.8);
+    color: #000;
+    text-align: center;
+
+}
+
+
+.form{
+    display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+.form .contact-form input{
+    width: 38rem;
+    background-color: transparent;
+    border: 0px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+    
+    border-bottom: 2px solid #1e1111;
+}
+
+.form .contact-form input ~ span{
+    position: absolute;
+    left: 20px;
+    transition: 0.9s ease-in-out;
+    margin-top: 10px;
+}
+
+.form .contact-form input:focus ~ span{
+transform: translateY(-20px);
+pointer-events: none;
+}
+
+.form .contact-form textarea{
+    width: 30rem;
+    border: 0;
+    background-color: transparent;
+    margin: 20px;
+    font-size: 17px;
+    border-bottom: 2px solid #d12929;
+
+
+}
+
+
+.form .contact-form textarea ~ span{
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+    transition: 0.9s ease-in-out;
+}
+
+
+.form .contact-form textarea:focus ~ span{
+    transform: translateX(-20px);
+    pointer-events: none;
+}
+
+.form .contact-form input[ type=submit]{
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    font-size: 18px;
+    width: 50%;
+    height: 40px;
+    margin-top: -5px;
+
+}
+.form .contact-form input[ type=submit] :hover{
+    background-color:transparent;
+    color: rgb(255, 30, 120);
+}
+
+.media{
+    position: absolute;
+    top: 85vh;
+    right: 20vh;
+    display: flex;
+    list-style: none;
+}
+
+.media li{
+    margin: 20px 30px;
+}
+
+@media  screen and(max-width:900px) {
+    body{
+        background-repeat: repeat-y;
+        overflow:auto;
+    }
+
+    hearder{
+        position: absolute;
+        top: 20%;
+        left:0;
+        width: 100%;
+    }
+    .empty{
+        height: 200vh;
+
+    }
+
+    .form{
+        position: absolute;
+        top: 100vh;
+        margin-left: 10%;
+
+    
+    }
+    .content-form{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:0;
+        margin-top: 53vh;
+        margin-left: 10vh;
+    }
+
+    
+}
